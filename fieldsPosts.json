@@ -1,0 +1,84 @@
+{
+  "fields": [
+    {
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "name": "content",
+      "type": "text"
+    },
+    {
+      "name": "picture1",
+      "type": "file"
+    },
+        {
+      "name": "picture2",
+      "type": "file"
+    },
+        {
+      "name": "picture3",
+      "type": "file"
+    },
+        {
+      "name": "picture4",
+      "type": "file"
+    },
+        {
+      "name": "picture5",
+      "type": "file"
+    },
+
+    {
+      "name": "price",
+      "type": "integer"
+    },
+    {
+      "name": "category",
+      "type": "select",
+      "options": {
+        "Multimedia": "Multimedia",
+        "Immobilier": "Immobilier",
+        "Vehicules": "Vehicules",
+        "Loisirs": "Loisirs",
+        "Materiel Pro": "Materiel Pro",
+        "Services": "Services",
+        "Maison": "Maison"
+      }
+    },
+    {
+      "name": "user_id",
+      "type": "integer#unsigned"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "column": "user_id",
+      "references": "id",
+      "on": "users",
+      "onDelete": "cascade"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "user",
+      "type": "belongsTo",
+      "class": "App\\User"
+    }
+  ],
+  "validations": [
+    {
+      "field": "title",
+      "rules": "required"
+    },
+    {
+      "field": "content",
+      "rules": "required"
+    },
+    {
+      "field": "price",
+      "rules": "required"
+    }
+  ]
+}
+

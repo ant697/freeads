@@ -1,0 +1,67 @@
+{
+  "fields": [
+    {
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "name": "content",
+      "type": "text"
+    },
+    {
+      "name": "post_id",
+      "type": "integer#unsigned"
+    },
+    {
+      "name": "sender_id",
+      "type": "integer#unsigned"
+    },
+    {
+      "name": "receiver_id",
+      "type": "integer#unsigned"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "column": "sender_id",
+      "references": "id",
+      "on": "users",
+      "onDelete": "cascade"
+    },
+    {
+      "column": "receiver_id",
+      "references": "id",
+      "on": "users",
+      "onDelete": "cascade"
+    },
+    {
+      "column": "post_id",
+      "references": "id",
+      "on": "posts",
+      "onDelete": "cascade"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "user",
+      "type": "belongsTo",
+      "class": "App\\User"
+    },
+    {
+      "name": "post",
+      "type": "belongsTo",
+      "class": "App\\Post"
+    }
+  ],
+  "validations": [
+    {
+      "field": "title",
+      "rules": "required"
+    },
+    {
+      "field": "content",
+      "rules": "required"
+    }
+  ]
+}
+

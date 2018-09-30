@@ -1,0 +1,16 @@
+.post-picture {
+  max-height: 100px !important;
+  max-width: 100px !important; }
+
+.post-nopicture {
+  max-height: 50px !important;
+  max-width: 50px !important; }
+
+.post-picture-view {
+  max-height: 500px !important;
+  max-width: 500px !important; }
+
+.priceCol {
+  white-space: nowrap !important; }
+
+/*# sourceMappingURL=custom.css.map */
