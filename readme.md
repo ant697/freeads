@@ -1,10 +1,61 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+**** 
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+# Freeads
+
+Site de ventes en ligne sur le framwork Laravel
+
+## Description Sujet 
+
+* Créer un site vente en ligne avec systeme d'authentification Admin/user
+    * Confirmation de compte avec Mail
+    * Reinitialiser Mot de Passe Avec Mail
+* Possibilité Créer et consulter annonces
+    ** Systeme de CRUD en SQL
+* Possibilité Filtrer annonce avec recherche par :
+    * correspondance de mots avec priorité _pour les titres_
+    * critères :
+        * categories
+        * utilisateur
+        * avec images Uniquement
+        * Fourchette de prix
+* Temps du Projet 5 Jours 
+## Première étape
+
+* lancer un terminal à la racine du dossier du projet 
+    * Laravel development server started on http://127.0.0.1:8000/
+### Prérequis
+
+* Lancez Sur le **serveur** en **local**
+    
+  * Pour MacOS installez [MAMP](https://documentation.mamp.info/en/MAMP-Mac/Installation/)
+  * Lancez Ces commandes dans un terminal quand vous etes dans le parent du dossier Puissance 4 
+  *  
+  * Pour Ubuntu installez Apache2
+  * 
+
+### Installing
+
+Disponible sous le serveur artisan de laravel
+
+lancez un navigateur sous :
+
+    http://127.0.0.1:8000/
+
+## Authors
+
+* **Antoine Guerra** - *Projet Pour EPITECH* - [EPITECH](http://www.epitech.eu/)
+
+## Built With
+
+* Laravel
+
+<p align=center><img src=https://laravel.com/assets/img/components/logo-laravel.svg></p>
+
+<p align=center>
+<a href=https://travis-ci.org/laravel/framework><img src=https://travis-ci.org/laravel/framework.svg alt=Build Status></a>
+<a href=https://packagist.org/packages/laravel/framework><img src=https://poser.pugx.org/laravel/framework/d/total.svg alt=Total Downloads></a>
+<a href=https://packagist.org/packages/laravel/framework><img src=https://poser.pugx.org/laravel/framework/v/stable.svg alt=Latest Stable Version></a>
+<a href=https://packagist.org/packages/laravel/framework><img src=https://poser.pugx.org/laravel/framework/license.svg alt=License></a>
 </p>
 
 ## About Laravel
@@ -38,3 +89,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+
